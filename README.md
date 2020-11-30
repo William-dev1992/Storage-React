@@ -1,3 +1,10 @@
+# About the app
+
+This is a new version of the [To-do-list](https://github.com/William-dev1992/To-do-list) app that I've done, but this time using react.js. 
+
+This is an app where yoou can put up items, activities, dayly-marks or anything that you need or wanna do.
+You're able to mark your actvities as "Done" or "Not done" and delete any item if you want.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
