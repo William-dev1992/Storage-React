@@ -3,10 +3,12 @@ class Item{
 
   static lastId = 0
 
-  constructor(text){
+  constructor(text, number, date){
     this.id = Item.lastId++;
     this.text = text;
-    this.done= false;
+    this.number = number;
+    this.date = date;
+
   }
 }
 

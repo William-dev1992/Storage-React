@@ -1,26 +1,24 @@
 import React from 'react';
-import Card from './Card';
-
-function DoneImg(props){
-  if(props.done){
-    return 'Done'
-  } else {
-    return 'Not done'
-  }
-}
-
 
 function ListItem(props){
 
   return (
-      <li>
-        <Card className={props.item.done ? "done item" : "item"}>
-          {props.item.text}
-          <div>
-            <button onClick={() => {props.onDone(props.item)}}><DoneImg done={props.item.done}></DoneImg></button>
-            <button onClick={() => {props.onItemDeleted(props.item)}}>x</button>
-          </div>
-        </Card>
-      </li>)}
+    <>
+      <tr className="tr">
+          <td className="td" key={props.item.text}>{props.item.text}</td>
+          <td className="td" key={props.item.number}>{props.item.number}</td>
+          <td className="td" key={props.item.date}>{props.item.date}</td>
+      </tr>
+      <div className='buttonsDiv'>
+        <button 
+          className="delButton" 
+          onClick={() => {props.onEditItem(props.item)}}>Edit</button>
+        <button 
+          className="delButton" 
+          onClick={() => {props.onItemDeleted(props.item)}}>x</button>
+      </div>
+    </>
+      )
+}
 
 export default ListItem

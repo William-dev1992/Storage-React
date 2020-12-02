@@ -10,7 +10,6 @@ function Modal(props){
     }
     console.log(target)
   }
-
   return (
     <div id="modal" onClick={hideModal} className= {props.show ? "modal" : "hideModal" }>
       <Card className="cardModal" >

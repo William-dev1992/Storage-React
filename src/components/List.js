@@ -4,9 +4,17 @@ import ListItem from './ListItem';
 function List(props){
 
   return (
-    <ul>
-      {props.itens.map(item => <ListItem key={item.id} item={item} onDone={props.onDone} onItemDeleted={props.onItemDeleted}></ListItem>)}
-    </ul>
+    <table className="table">
+        <tbody>
+          {props.itens.map(item => 
+            <ListItem 
+              key={item.id} 
+              item={item} 
+              onItemDeleted={props.onItemDeleted}
+              onEditItem={props.onEditItem}>
+            </ListItem>)}
+        </tbody>
+    </table>
   )
 
 }

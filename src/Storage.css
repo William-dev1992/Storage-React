@@ -64,3 +64,52 @@ ul{
 .hideModal{
   display: none;
 }
+
+.edit{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardEdit{
+  padding: 20px;
+  background-color: white;
+}
+
+.hideEdit{
+  display: none;
+}
+
+.table{
+  margin-top: 15px;
+  width: 100%;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+
+.tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.td{
+  border: 1px solid black;
+  width:100%;
+
+}
+
+.buttonsDiv{
+  display: flex;
+}
+
+.delButton{
+  display: flex;
+  margin-left: 5px;
+}
