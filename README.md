@@ -1,5 +1,3 @@
-HEAD
-=======
 # About the app
 
 This is a new version of the [To-do-list](https://github.com/William-dev1992/To-do-list) app that I've done, but this time using react.js. 
